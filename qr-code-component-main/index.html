@@ -29,51 +29,63 @@
     <title>Frontend Mentor | QR code component</title>
 
     <style>
+      body {
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "Outfit", sans-serif;
+      }
+
+      .rectangle {
+        background-color: white;
+        width: 320px;
+        padding: 16px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .rounded-qr {
+        border-radius: 10px;
+        width: 100%;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      .rounded-qr {
-        border-radius: 20px;
-      }
-      .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1440px;
-        font-size: 15px;
-      }
+
       .outfit-h1 {
-        font-family: "Outfit", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 700;
-        font-style: normal;
         color: hsl(218, 44%, 22%);
+         margin: 16px 0;
       }
+
       .outfit-body {
-        font-family: "Outfit", sans-serif;
-        font-optical-sizing: auto;
+        font-size: 20px;
         font-weight: 400;
-        font-style: normal;
         color: hsl(216, 15%, 48%);
       }
     </style>
   </head>
-  <body background-color: hsl(212, 45%, 89%);>
-    <div class="card">
-      <img src="images/image-qr-code.png" class="rounded-qr" /><br />
-      <br />
-      <div class="outfit-h1">
+  <body>
+    <div class="rectangle">
+      <img src="images/image-qr-code.png" class="rounded-qr" alt="qr code" />
+
+      <h2 class="outfit-h1">
         Improve your front-end skills by building projects
-      </div>
-      <br />
-      <div class="outfit-body">
+      </h2>
+
+      <p class="outfit-body">
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
-      </div>
+      </p>
+
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
